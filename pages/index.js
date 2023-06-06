@@ -22,7 +22,7 @@ export default function Home() {
             Go to Random Pokemon
           </button>
         </a>
-        <a href="">
+        <a href="/pokedex">
           <button style={{ padding: "20px", backgroundColor: "greenyellow" }}>
             Go to Pokedex
           </button>
