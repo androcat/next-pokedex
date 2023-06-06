@@ -3,18 +3,38 @@ function getRandomIndex(max) {
 }
 
 export default function RandomPokemon({ name, picture }) {
-  console.log("name", name);
-  console.log("pic? sprites", picture.sprites.front_default);
+  //   console.log("name", name);
+  //   console.log("pic? sprites", picture.sprites.front_default);
 
   //   let pokeName = results[randIndex]?.name;
   let pokePictureSrc = picture.sprites.front_default;
 
   return (
-    <>
-      <h2>Random Pokemon Picked for You:</h2>
-      <h2>{name}</h2>
-      <img src={pokePictureSrc} />
-    </>
+    <main style={{ height: "100vh" }}>
+      <section
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "40% auto",
+        }}
+      >
+        <div
+          style={{
+            textAlign: "center",
+            verticalAlign: "middle",
+            backgroundColor: "rgba(255, 255, 255, 0.5)",
+            padding: "30px",
+          }}
+        >
+          <h2>Random Pokemon Picked for You:</h2>
+          <br />
+          <img style={{ height: "150px" }} src={pokePictureSrc} />
+          <h2>{name.toUpperCase()}</h2>
+        </div>
+      </section>
+    </main>
   );
 }
 
