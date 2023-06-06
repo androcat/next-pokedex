@@ -17,7 +17,7 @@ export default function RandomPokemon({ name, picture }) {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          margin: "40% auto",
+          margin: "20% 0",
         }}
       >
         <div
