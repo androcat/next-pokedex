@@ -16,7 +16,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <RandomPokemon />
+        <h1>Welcome to the Pokeworld!</h1>
+        <a href="/randomPokemon">
+          <button style={{ padding: "20px", backgroundColor: "red" }}>
+            Go to Random Pokemon
+          </button>
+        </a>
+        <a href="">
+          <button style={{ padding: "20px", backgroundColor: "greenyellow" }}>
+            Go to Pokedex
+          </button>
+        </a>
         {/* <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
